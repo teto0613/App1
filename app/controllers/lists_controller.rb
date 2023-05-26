@@ -15,6 +15,10 @@ class ListsController < ApplicationController
   def edit
   end
 
+  def index
+    @lists = List.all
+  end
+
 
   private
   def list_params
